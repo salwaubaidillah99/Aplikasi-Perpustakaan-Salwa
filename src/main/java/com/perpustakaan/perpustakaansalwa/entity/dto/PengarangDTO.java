@@ -15,5 +15,6 @@ public class PengarangDTO {
     private String alamat;
 
     private String noTelp;
+
 }
 

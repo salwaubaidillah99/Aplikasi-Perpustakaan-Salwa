@@ -4,7 +4,6 @@ import com.perpustakaan.perpustakaansalwa.entity.Petugas;
 import com.perpustakaan.perpustakaansalwa.entity.dto.PetugasDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-
 import java.util.List;
 
 @Mapper

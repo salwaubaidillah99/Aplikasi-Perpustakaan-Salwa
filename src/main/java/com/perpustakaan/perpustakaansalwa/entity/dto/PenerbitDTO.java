@@ -15,4 +15,6 @@ public class PenerbitDTO {
     private String alamat;
 
     private String noTelp;
+
 }
+

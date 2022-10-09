@@ -19,4 +19,5 @@ public class AnggotaDTO {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private UserDTO user;
+
 }

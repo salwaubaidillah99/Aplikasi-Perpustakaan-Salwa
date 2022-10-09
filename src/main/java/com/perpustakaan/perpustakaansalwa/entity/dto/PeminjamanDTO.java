@@ -22,4 +22,5 @@ public class PeminjamanDTO {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private PetugasDTO petugas;
+
 }

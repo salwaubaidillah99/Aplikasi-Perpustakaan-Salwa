@@ -17,4 +17,5 @@ public class PetugasDTO {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private UserDTO user;
+    
 }

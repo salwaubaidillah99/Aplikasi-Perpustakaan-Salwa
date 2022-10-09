@@ -4,7 +4,6 @@ import com.perpustakaan.perpustakaansalwa.entity.Anggota;
 import com.perpustakaan.perpustakaansalwa.entity.dto.AnggotaDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-
 import java.util.List;
 
 @Mapper

@@ -22,6 +22,7 @@ public class BukuDTO {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private PenerbitDTO penerbit;
+
 }
 
 

@@ -4,7 +4,6 @@ import com.perpustakaan.perpustakaansalwa.entity.PeminjamanDetail;
 import com.perpustakaan.perpustakaansalwa.entity.dto.PeminjamanDetailDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-
 import java.util.List;
 
 @Mapper

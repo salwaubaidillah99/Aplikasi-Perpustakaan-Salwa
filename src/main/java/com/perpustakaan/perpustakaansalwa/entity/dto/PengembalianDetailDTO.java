@@ -11,4 +11,5 @@ public class PengembalianDetailDTO {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private BukuDTO buku;
+
 }
