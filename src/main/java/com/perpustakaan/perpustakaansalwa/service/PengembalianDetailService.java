@@ -1,7 +1,6 @@
 package com.perpustakaan.perpustakaansalwa.service;
 
 import com.perpustakaan.perpustakaansalwa.entity.dto.PengembalianDetailDTO;
-
 import java.util.List;
 
 public interface PengembalianDetailService {

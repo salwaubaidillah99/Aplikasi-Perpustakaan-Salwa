@@ -1,7 +1,6 @@
 package com.perpustakaan.perpustakaansalwa.service;
 
 import com.perpustakaan.perpustakaansalwa.entity.dto.BukuDTO;
-
 import java.util.List;
 
 public interface BukuService {

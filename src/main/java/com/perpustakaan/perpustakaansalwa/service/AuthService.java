@@ -8,4 +8,5 @@ public interface AuthService {
     ResponseAuthDTO register(UserDTO data);
 
     ResponseAuthDTO login(AuthenticationDTO data);
+
 }

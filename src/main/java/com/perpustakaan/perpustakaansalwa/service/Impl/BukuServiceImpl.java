@@ -13,7 +13,6 @@ import com.perpustakaan.perpustakaansalwa.repository.PengarangRepository;
 import com.perpustakaan.perpustakaansalwa.service.BukuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 import java.util.List;
 

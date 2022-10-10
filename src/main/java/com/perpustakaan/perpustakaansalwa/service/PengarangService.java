@@ -1,7 +1,6 @@
 package com.perpustakaan.perpustakaansalwa.service;
 
 import com.perpustakaan.perpustakaansalwa.entity.dto.PengarangDTO;
-
 import java.util.List;
 
 public interface PengarangService {

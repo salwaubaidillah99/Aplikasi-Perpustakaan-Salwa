@@ -35,5 +35,6 @@ public class Response {
     public Response(String message, HttpStatus status) {
         this.message = message;
         this.status = status;
+
     }
 }

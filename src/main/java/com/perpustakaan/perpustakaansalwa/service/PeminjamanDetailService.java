@@ -1,7 +1,6 @@
 package com.perpustakaan.perpustakaansalwa.service;
 
 import com.perpustakaan.perpustakaansalwa.entity.dto.PeminjamanDetailDTO;
-
 import java.util.List;
 
 public interface PeminjamanDetailService {
