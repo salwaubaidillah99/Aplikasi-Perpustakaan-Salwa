@@ -29,5 +29,6 @@ public class AuthenticationController {
     public Response register(@RequestBody UserDTO dto){
         ResponseAuthDTO data = service.register(dto);
         return new Response(data, data != null ? "Registrasi Berhasil" : "Registrasi Gagal", HttpStatus.OK);
+
     }
 }
