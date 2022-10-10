@@ -1,0 +1,1232 @@
+{
+	"info": {
+		"_postman_id": "7ee02408-1b78-44f8-b0fa-6f47e0018874",
+		"name": "Tugas Akhir Salwa Perpustakaan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Anggota",
+			"item": [
+				{
+					"name": "CREATE DATA ANGGOTA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjEiLCJleHAiOjE2NjUzNzM4MzAsImlhdCI6MTY2NTM1NTgzMH0.Kv42FAQ9R-I1I2o-etyBin8g2iH1XY2QN1CnPWkIIJR6iJ11EhkVpJhS9Cl0aRx_XBbPbEm3vmBP78UcM_O-GQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaAnggota\" : \"Risa \",\r\n    \"jenisKelamin\" : \"Perempuan\",\r\n    \"alamat\" : \"Bogor\",\r\n    \"noTelp\" : \"+8253738927\",\r\n    \"user\":{\r\n        \"id_user\": 7,\r\n         \"username\": \"admin1\",\r\n         \"password\":\"admin1\",\r\n        \"email\": \"admin1@gmail.com\",\r\n         \"role\": \"admin\"\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/anggota/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"anggota",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT ALL DATA ANGGOTA",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/anggota/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"anggota",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA ANGGOTA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/anggota/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"anggota",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT DATA ANGGOTA BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjEiLCJleHAiOjE2NjUzNzM4MzAsImlhdCI6MTY2NTM1NTgzMH0.Kv42FAQ9R-I1I2o-etyBin8g2iH1XY2QN1CnPWkIIJR6iJ11EhkVpJhS9Cl0aRx_XBbPbEm3vmBP78UcM_O-GQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/anggota/find-by-id/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"anggota",
+								"find-by-id",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA ANGGOTA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"alamat\" : \"Jakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/anggota/update/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"anggota",
+								"update",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buku",
+			"item": [
+				{
+					"name": "CREATE DATA BUKU",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"judulBuku\":\"Jaringan Komputer\",\r\n    \"tahunTerbit\":\"2019\",\r\n    \"jumlah\":\"150\",\r\n    \"isbn\":\"6278-2762-29828\",\r\n    \"pengarang\":\r\n    {\r\n           \"id\": 1,\r\n            \"namaPengarang\": \"Ilmi Firdaus\",\r\n            \"alamat\": \"Jakarta\",\r\n            \"noTelp\": \"+662786262990\"\r\n    },\r\n    \"penerbit\":{\r\n        \"id\": 3,\r\n            \"namaPenerbit\": \"Republika Pustaka\",\r\n            \"alamat\": \"Jawa Tengah\",\r\n            \"noTelp\": \"+62893637228\"\r\n\r\n    }}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/buku/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"buku",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT ALL DATA BUKU",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/buku/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"buku",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA BUKU",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/buku/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"buku",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT DATA BUKU BY ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/buku/find-by-id/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"buku",
+								"find-by-id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA BUKU",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isbn\":\"3489-1293-49202\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/buku/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"buku",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Petugas",
+			"item": [
+				{
+					"name": "CREATE DATA PETUGAS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjUiLCJleHAiOjE2NjUzNzQ5NjIsImlhdCI6MTY2NTM1Njk2Mn0.YYYb4ueV70Peak98d3YrLPyYTvPlbZ5BfGTJaW_0zparSyEqgM5bDmAFnf-lAd5MvnbJSbPFMMc1yKqpayDkyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaPetugas\" : \"Azizah\",\r\n    \"noTelp\" : \"+6282930300\",\r\n    \"alamat\" : \"BOogor\",\r\n    \"user\": {\r\n        \"id_user\": 7,\r\n            \"username\": \"admin1\",\r\n            \"password\":\"admin1\",\r\n            \"email\": \"admin1@gmail.com\",\r\n            \"role\": \"admin\"\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/petugas/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petugas",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT ALL DATA PETUGAS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjUiLCJleHAiOjE2NjUzNzQ5NjIsImlhdCI6MTY2NTM1Njk2Mn0.YYYb4ueV70Peak98d3YrLPyYTvPlbZ5BfGTJaW_0zparSyEqgM5bDmAFnf-lAd5MvnbJSbPFMMc1yKqpayDkyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/petugas/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petugas",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT DATA PETUGAS BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjUiLCJleHAiOjE2NjUzNzQ5NjIsImlhdCI6MTY2NTM1Njk2Mn0.YYYb4ueV70Peak98d3YrLPyYTvPlbZ5BfGTJaW_0zparSyEqgM5bDmAFnf-lAd5MvnbJSbPFMMc1yKqpayDkyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/petugas/find-by-id/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petugas",
+								"find-by-id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA PETUGAS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjUiLCJleHAiOjE2NjUzNzQ5NjIsImlhdCI6MTY2NTM1Njk2Mn0.YYYb4ueV70Peak98d3YrLPyYTvPlbZ5BfGTJaW_0zparSyEqgM5bDmAFnf-lAd5MvnbJSbPFMMc1yKqpayDkyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaPetugas\": \"Mustofa Al-Jaeer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/petugas/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petugas",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA PETUGA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjUiLCJleHAiOjE2NjUzNzQ5NjIsImlhdCI6MTY2NTM1Njk2Mn0.YYYb4ueV70Peak98d3YrLPyYTvPlbZ5BfGTJaW_0zparSyEqgM5bDmAFnf-lAd5MvnbJSbPFMMc1yKqpayDkyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/petugas/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petugas",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Peminjaman",
+			"item": [
+				{
+					"name": "CREATE DATA PEMINJAMANS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tglPinjam\" : \"04-05-2020\",\r\n    \"tglkembali\":\"04-06-2020\",\r\n    \"anggota\":\r\n    {\r\n         \"id\": 4,\r\n            \"namaAnggota\": \"Rizki\",\r\n            \"jenisKelamin\": \"Lali-laki\",\r\n            \"alamat\": \"Bandung\",\r\n            \"noTelp\": \"+8257282929\"\r\n    },\r\n    \"petugas\":\r\n    {\r\n            \"id\": 3,\r\n            \"namaPetugas\": \"Azizah\",\r\n            \"alamat\": \"BOogor\",\r\n            \"noTelp\": \"+6282930300\"\r\n    }\r\n}\r\n    \r\n\r\n        \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/peminjaman/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peminjaman",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT ALL DATA PEMINJAMANS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peminjaman/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peminjaman",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA PEMINJAMANS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tglPinjam\":\"03-02-2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/peminjaman/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peminjaman",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA PEMINJAMAN",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peminjaman/delete/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peminjaman",
+								"delete",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT DATA PEMINJAMAN BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peminjaman/find-by-id/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peminjaman",
+								"find-by-id",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pengembalian",
+			"item": [
+				{
+					"name": "CREATE DATA PENGEMBALIAN",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tglPengembalian\": \"01-04-2018\",\r\n    \"denda\": \"150000\",\r\n    \"anggota\": {\r\n                \"id\": 5,\r\n            \"namaAnggota\": \"Risa \",\r\n            \"jenisKelamin\": \"Perempuan\",\r\n            \"alamat\": \"Bogor\",\r\n            \"noTelp\": \"+8253738927\"\r\n            },\r\n            \"petugas\": {\r\n                \"id\": 2,\r\n                \"namaPetugas\": \"Muhammad Fatur\",\r\n                \"alamat\": \"Bandung\",\r\n                \"noTelp\": \"+623833330\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pengembalian/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengembalian",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT ALL DATA PENGEMBALIAN",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pengembalian/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengembalian",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA PENGEMBALIAN",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjYiLCJleHAiOjE2NjUzNzU4NjMsImlhdCI6MTY2NTM1Nzg2M30.e1M32sZpH6GhM4BSdSnhnOpF1ZTcLWrS-9SBOFTaLPzdHwm6hLgubmD6h3woXRghyIBliG44X30V74tSimqLNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"denda\":250000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pengembalian/update/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengembalian",
+								"update",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA ENGEMBALIAN",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Penerbit",
+			"item": [
+				{
+					"name": "CREATE DATA PENERBIT",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaPenerbit\":\"Erlangga Pustaka\",\r\n    \"alamat\":\"Bogor\",\r\n    \"noTelp\":\"+6263737829\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/penerbit/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"penerbit",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT ALL DATA PENERBIT",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/penerbit/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"penerbit",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA PENERBIT",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaPenerbit\":\"Republika Pustaka\",\r\n    \"telp\":\"+62373849440\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/penerbit/update/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"penerbit",
+								"update",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT DATA PENERBIT BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/penerbit/find-by-id/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"penerbit",
+								"find-by-id",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA PENERBIT BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/penerbit/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"penerbit",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pengarang",
+			"item": [
+				{
+					"name": "Select All Data Pengarang",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pengarang/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengarang",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Data Pengarang",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaPengarang\":\"Joko Santoso\",\r\n    \"alamat\":  \"Bandung\",\r\n    \"noTelp\":\"+5261737663\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pengarang/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengarang",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA PENGARANG",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"alamat\":\"Bandung\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pengarang/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengarang",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pengarang/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengarang",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SELECT DATA PENGARANG BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmcxIiwiZXhwIjoxNjY1MzQwOTk4LCJpYXQiOjE2NjUzMjI5OTh9.5gZzNbci3NzSzocqDN8k_sbvSVwweXpQPzPtntl3YpG_i-pdv89WJQ-sn-G0O69P0odeeH0aSzltaCE809UoxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pengarang/find-by-id/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pengarang",
+								"find-by-id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register Auth",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjIiLCJleHAiOjE2NjUzNzMxODAsImlhdCI6MTY2NTM1NTE4MH0.vFrf_-4-NriR3V6hDlAJeRQxfsR8w2Slqb1eEo_tv16hmiYbTdftEdJJWe24WfBXhCvWIzO7NoFEg0ueyNLRiw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"admin2\",\r\n    \"password\":\"admin2\",\r\n    \"email\":\"admin2@gmail.com\",\r\n    \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
