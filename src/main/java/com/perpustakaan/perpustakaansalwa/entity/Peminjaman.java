@@ -33,5 +33,4 @@ public class Peminjaman {
     @JoinColumn(name = "petugas_id")
     private Petugas petugas;
 
-
 }
